@@ -25,6 +25,9 @@
                                 <rect key="frame" x="154" y="567" width="67" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="add_photo_btn.png"/>
+                                <connections>
+                                    <action selector="record:" destination="Y1T-ng-qzT" eventType="touchUpInside" id="nyu-TM-Twr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -37,6 +40,7 @@
                         <viewLayoutGuide key="safeArea" id="XhV-mf-o2f"/>
                     </view>
                     <connections>
+                        <outlet property="recordBtn" destination="zwC-3x-hxj" id="yXr-m3-Ilz"/>
                         <outlet property="sceneView" destination="go8-9R-efw" id="ZX7-I7-ZkV"/>
                     </connections>
                 </viewController>
