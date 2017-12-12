@@ -9,10 +9,14 @@
 import UIKit
 import SceneKit
 import ARKit
+import AVFoundation
 
 class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
+    
+    // 音乐播放器
+    private var audioPlayer: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,14 +24,33 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Set the view's delegate
         sceneView.delegate = self
         
-        // Show statistics such as fps and timing information
-        sceneView.showsStatistics = true
+        loadAnimation()
         
-        // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        // 载入音乐
+        loadMusic()
+    }
+    
+    // 载入AR
+    func loadAnimation() {
+        let sceneCharacter = SCNScene(named: "art.scnassets/Robot Hip Hop Dance.dae")!
         
-        // Set the scene to the view
-        sceneView.scene = scene
+        let parentNode = SCNNode()
+        
+        for child in sceneCharacter.rootNode.childNodes {
+            parentNode.addChildNode(child)
+        }
+        parentNode.position = SCNVector3(0,-1,-2)
+        parentNode.scale = SCNVector3(0.009,0.009,0.009)
+        
+        sceneView.scene.rootNode.addChildNode(parentNode)
+    }
+    
+    // 载入音乐
+    func loadMusic() {
+        let alertSound = URL(fileURLWithPath: Bundle.main.path(forResource: "TFBOYS - 青春修炼手册 - live", ofType: "mp3")!)
+        try! audioPlayer = AVAudioPlayer(contentsOf: alertSound)
+        audioPlayer!.prepareToPlay()
+        audioPlayer!.play()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -35,46 +58,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
-
+        
         // Run the view's session
         sceneView.session.run(configuration)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-        // Pause the view's session
-        sceneView.session.pause()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Release any cached data, images, etc that aren't in use.
-    }
-
-    // MARK: - ARSCNViewDelegate
-    
-/*
-    // Override to create and configure nodes for anchors added to the view's session.
-    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
-        let node = SCNNode()
-     
-        return node
-    }
-*/
-    
-    func session(_ session: ARSession, didFailWithError error: Error) {
-        // Present an error message to the user
-        
-    }
-    
-    func sessionWasInterrupted(_ session: ARSession) {
-        // Inform the user that the session has been interrupted, for example, by presenting an overlay
-        
-    }
-    
-    func sessionInterruptionEnded(_ session: ARSession) {
-        // Reset tracking and/or remove existing anchors if consistent tracking is required
-        
     }
 }
