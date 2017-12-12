@@ -14,6 +14,9 @@
 		320FF5D51FDFD5E0000F0627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320FF5D41FDFD5E0000F0627 /* Assets.xcassets */; };
 		320FF5D81FDFD5E0000F0627 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 320FF5D61FDFD5E0000F0627 /* LaunchScreen.storyboard */; };
 		320FF5E01FDFD6D0000F0627 /* TFBOYS - 青春修炼手册 - live.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 320FF5DF1FDFD6D0000F0627 /* TFBOYS - 青春修炼手册 - live.mp3 */; };
+		32FAB95F1FE003FA00AE7206 /* add_photo_btn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FAB95C1FE003F900AE7206 /* add_photo_btn@3x.png */; };
+		32FAB9601FE003FA00AE7206 /* add_photo_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FAB95D1FE003F900AE7206 /* add_photo_btn.png */; };
+		32FAB9611FE003FA00AE7206 /* add_photo_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FAB95E1FE003F900AE7206 /* add_photo_btn@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		320FF5D71FDFD5E0000F0627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		320FF5D91FDFD5E0000F0627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		320FF5DF1FDFD6D0000F0627 /* TFBOYS - 青春修炼手册 - live.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TFBOYS - 青春修炼手册 - live.mp3"; sourceTree = "<group>"; };
+		32FAB95C1FE003F900AE7206 /* add_photo_btn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_photo_btn@3x.png"; sourceTree = "<group>"; };
+		32FAB95D1FE003F900AE7206 /* add_photo_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_photo_btn.png; sourceTree = "<group>"; };
+		32FAB95E1FE003F900AE7206 /* add_photo_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_photo_btn@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				320FF5CF1FDFD5E0000F0627 /* ViewController.swift */,
 				320FF5D11FDFD5E0000F0627 /* Main.storyboard */,
 				320FF5D41FDFD5E0000F0627 /* Assets.xcassets */,
+				32FAB95D1FE003F900AE7206 /* add_photo_btn.png */,
+				32FAB95E1FE003F900AE7206 /* add_photo_btn@2x.png */,
+				32FAB95C1FE003F900AE7206 /* add_photo_btn@3x.png */,
 				320FF5D61FDFD5E0000F0627 /* LaunchScreen.storyboard */,
 				320FF5D91FDFD5E0000F0627 /* Info.plist */,
 				320FF5DF1FDFD6D0000F0627 /* TFBOYS - 青春修炼手册 - live.mp3 */,
@@ -131,9 +140,12 @@
 			files = (
 				320FF5CE1FDFD5E0000F0627 /* art.scnassets in Resources */,
 				320FF5D81FDFD5E0000F0627 /* LaunchScreen.storyboard in Resources */,
+				32FAB9601FE003FA00AE7206 /* add_photo_btn.png in Resources */,
 				320FF5D51FDFD5E0000F0627 /* Assets.xcassets in Resources */,
 				320FF5E01FDFD6D0000F0627 /* TFBOYS - 青春修炼手册 - live.mp3 in Resources */,
 				320FF5D31FDFD5E0000F0627 /* Main.storyboard in Resources */,
+				32FAB9611FE003FA00AE7206 /* add_photo_btn@2x.png in Resources */,
+				32FAB95F1FE003FA00AE7206 /* add_photo_btn@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
