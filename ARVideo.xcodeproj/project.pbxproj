@@ -14,21 +14,21 @@
 		320FF5D51FDFD5E0000F0627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320FF5D41FDFD5E0000F0627 /* Assets.xcassets */; };
 		320FF5D81FDFD5E0000F0627 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 320FF5D61FDFD5E0000F0627 /* LaunchScreen.storyboard */; };
 		320FF5E01FDFD6D0000F0627 /* TFBOYS - 青春修炼手册 - live.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 320FF5DF1FDFD6D0000F0627 /* TFBOYS - 青春修炼手册 - live.mp3 */; };
-		32E3254D1FE0106F009C55FF /* ARVideoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E3254C1FE0106F009C55FF /* ARVideoKit.framework */; };
-		32E3254F1FE0140F009C55FF /* ARVideoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32E3254C1FE0106F009C55FF /* ARVideoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		322433BE1FE0EE5B0058EF19 /* ARVideoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 322433BC1FE0EE5B0058EF19 /* ARVideoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		322433C11FE0FE6E0058EF19 /* ARVideoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 322433C01FE0FE6E0058EF19 /* ARVideoKit.framework */; };
 		32FAB95F1FE003FA00AE7206 /* add_photo_btn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FAB95C1FE003F900AE7206 /* add_photo_btn@3x.png */; };
 		32FAB9601FE003FA00AE7206 /* add_photo_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FAB95D1FE003F900AE7206 /* add_photo_btn.png */; };
 		32FAB9611FE003FA00AE7206 /* add_photo_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32FAB95E1FE003F900AE7206 /* add_photo_btn@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		32E325501FE0140F009C55FF /* Embed Frameworks */ = {
+		322433BB1FE0EDDB0058EF19 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				32E3254F1FE0140F009C55FF /* ARVideoKit.framework in Embed Frameworks */,
+				322433BE1FE0EE5B0058EF19 /* ARVideoKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,7 +45,8 @@
 		320FF5D71FDFD5E0000F0627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		320FF5D91FDFD5E0000F0627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		320FF5DF1FDFD6D0000F0627 /* TFBOYS - 青春修炼手册 - live.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "TFBOYS - 青春修炼手册 - live.mp3"; sourceTree = "<group>"; };
-		32E3254C1FE0106F009C55FF /* ARVideoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ARVideoKit.framework; sourceTree = "<group>"; };
+		322433BC1FE0EE5B0058EF19 /* ARVideoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ARVideoKit.framework; sourceTree = "<group>"; };
+		322433C01FE0FE6E0058EF19 /* ARVideoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARVideoKit.framework; path = ../ARVideoKit.framework; sourceTree = "<group>"; };
 		32FAB95C1FE003F900AE7206 /* add_photo_btn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_photo_btn@3x.png"; sourceTree = "<group>"; };
 		32FAB95D1FE003F900AE7206 /* add_photo_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_photo_btn.png; sourceTree = "<group>"; };
 		32FAB95E1FE003F900AE7206 /* add_photo_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_photo_btn@2x.png"; sourceTree = "<group>"; };
@@ -56,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32E3254D1FE0106F009C55FF /* ARVideoKit.framework in Frameworks */,
+				322433C11FE0FE6E0058EF19 /* ARVideoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,9 +67,10 @@
 		320FF5BF1FDFD5E0000F0627 = {
 			isa = PBXGroup;
 			children = (
+				322433BC1FE0EE5B0058EF19 /* ARVideoKit.framework */,
 				320FF5CA1FDFD5E0000F0627 /* ARVideo */,
 				320FF5C91FDFD5E0000F0627 /* Products */,
-				32E3254C1FE0106F009C55FF /* ARVideoKit.framework */,
+				322433BF1FE0FE6E0058EF19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +100,14 @@
 			path = ARVideo;
 			sourceTree = "<group>";
 		};
+		322433BF1FE0FE6E0058EF19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				322433C01FE0FE6E0058EF19 /* ARVideoKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,7 +118,8 @@
 				320FF5C41FDFD5E0000F0627 /* Sources */,
 				320FF5C51FDFD5E0000F0627 /* Frameworks */,
 				320FF5C61FDFD5E0000F0627 /* Resources */,
-				32E325501FE0140F009C55FF /* Embed Frameworks */,
+				322433BB1FE0EDDB0058EF19 /* Embed Frameworks */,
+				322433C21FE103D30058EF19 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -170,6 +181,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		322433C21FE103D30058EF19 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\ndone";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		320FF5C41FDFD5E0000F0627 /* Sources */ = {
@@ -251,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -302,7 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -321,6 +348,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ARVideo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ARVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -340,6 +368,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ARVideo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ARVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
